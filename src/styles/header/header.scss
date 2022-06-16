@@ -1,0 +1,55 @@
+
+$banner-color: rgb(225, 225, 225);
+$thrawn-blue: rgb(38, 125, 255);
+
+.container-fluid, .collapse, .nav-link, .home-btn, li, .dropdown-menu {
+    background-color: $banner-color !important;
+}
+.container-fluid {
+    border-top: 4px solid $thrawn-blue;
+    border-bottom: 4px solid $thrawn-blue;
+}
+.navbar {
+    padding: 0 !important;
+}
+.navbar-nav, .nav-link, ul {
+    border: 0;
+}
+hr {
+    background-color: black !important;
+}
+
+.home-btn {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.navbar-toggler {
+    background-color: black !important;
+    color: $banner-color !important;
+    padding-bottom: 8px !important;
+    border: 2px solid $thrawn-blue !important;
+    transition: 0.25s !important;
+    &:hover {
+        border: 2px solid $thrawn-blue !important;
+        color: $thrawn-blue !important;
+    }
+}
+
+.home-btn {
+    color: rgb(38, 125, 255) !important;
+}
+
+.dropdown-item, .nav-link {
+    color: black !important;
+}
+
+@media only screen and (max-width: 475px) {
+    .home-btn, .navbar-toggler {
+        font-size: 7.5vw !important;
+        // center the a tag, button, etc
+    }
+    .container-fluid {
+        padding-bottom: 4%;
+    }
+}

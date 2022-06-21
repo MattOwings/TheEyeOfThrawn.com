@@ -16,7 +16,9 @@
 }
 
 hr {
-  background-color: black !important;
+  background-color: #2b2b2b !important;
+  height: 1px !important;
+  opacity: 1 !important;
 }
 
 .home-btn {
@@ -25,7 +27,7 @@ hr {
 }
 
 .navbar-toggler {
-  background-color: black !important;
+  background-color: #2b2b2b !important;
   color: #e1e1e1 !important;
   padding-bottom: 8px !important;
   border: 2px solid #267dff !important;
@@ -43,7 +45,7 @@ hr {
 }
 
 .dropdown-item, .nav-link {
-  color: black !important;
+  color: #2b2b2b !important;
 }
 
 @media only screen and (max-width: 475px) {
@@ -54,4 +56,8 @@ hr {
     padding-bottom: 4%;
   }
 }
-/*# sourceMappingURL=header.css.map */
+
+.dropdown-menu {
+  border: 2px solid #2b2b2b;
+}
+/*# sourceMappingURL=navbar.css.map */

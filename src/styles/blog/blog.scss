@@ -1,0 +1,28 @@
+
+.blog-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.blog-post {
+    border-radius: 40px;
+    hr {
+        border-top: 2px solid white;
+        margin: 0;
+        background: white;
+    }
+    h1, h2, p {
+        text-align: center;
+    }
+    width: 300px;
+    border: 2px solid white;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.alert {
+    padding: 0 !important;
+    border: 2px solid red !important;
+    text-align: center;
+}

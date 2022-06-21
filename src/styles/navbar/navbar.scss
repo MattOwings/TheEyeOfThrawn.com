@@ -1,6 +1,7 @@
 
 $banner-color: rgb(225, 225, 225);
 $thrawn-blue: rgb(38, 125, 255);
+$background: rgb(43, 43, 43);
 
 .container-fluid, .collapse, .nav-link, .home-btn, li, .dropdown-menu {
     background-color: $banner-color !important;
@@ -16,7 +17,9 @@ $thrawn-blue: rgb(38, 125, 255);
     border: 0;
 }
 hr {
-    background-color: black !important;
+    background-color: $background !important;
+    height: 1px !important;
+    opacity: 1 !important;
 }
 
 .home-btn {
@@ -25,7 +28,7 @@ hr {
 }
 
 .navbar-toggler {
-    background-color: black !important;
+    background-color: $background !important;
     color: $banner-color !important;
     padding-bottom: 8px !important;
     border: 2px solid $thrawn-blue !important;
@@ -41,7 +44,7 @@ hr {
 }
 
 .dropdown-item, .nav-link {
-    color: black !important;
+    color: $background !important;
 }
 
 @media only screen and (max-width: 475px) {
@@ -52,4 +55,8 @@ hr {
     .container-fluid {
         padding-bottom: 4%;
     }
+}
+
+.dropdown-menu {
+    border: 2px solid $background;
 }

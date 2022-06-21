@@ -1,15 +1,10 @@
-import "../styles/header/header.css";
+import "../styles/navbar/navbar.css";
 
 function Header() {
     return (
         <nav className="navbar navbar-expand-md navbar-dark bg-dark">
             <div className="container-fluid">
-                <a
-                    className="navbar-brand home-btn"
-                    href="https://www.TheEyeOfThrawn.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
+                <a className="navbar-brand home-btn" href="/">
                     TheEyeOfThrawn.com
                 </a>
                 <button
@@ -29,32 +24,17 @@ function Header() {
                 >
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <a
-                                className="nav-link active"
-                                href="/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
+                            <a className="nav-link active" href="/">
                                 Home
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a
-                                className="nav-link active"
-                                href="/Blog"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
+                            <a className="nav-link active" href="/Blog">
                                 Blog
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a
-                                className="nav-link active"
-                                href="/About"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
+                            <a className="nav-link active" href="/AboutMe">
                                 About Me
                             </a>
                         </li>
@@ -67,7 +47,7 @@ function Header() {
                                 data-bs-toggle="dropdown"
                                 aria-expanded="false"
                             >
-                                Websites
+                                My Pages
                             </a>
                             <ul
                                 className="dropdown-menu"
@@ -81,6 +61,16 @@ function Header() {
                                         rel="noopener noreferrer"
                                     >
                                         Instagram
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        className="dropdown-item"
+                                        href="https://www.youtube.com/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        YouTube
                                     </a>
                                 </li>
                                 <li>

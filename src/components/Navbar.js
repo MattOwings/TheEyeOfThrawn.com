@@ -1,12 +1,14 @@
 import "../styles/navbar/navbar.css";
 
+import { Link } from "react-router-dom";
+
 function Header() {
     return (
         <nav className="navbar navbar-expand-md navbar-dark bg-dark">
             <div className="container-fluid">
-                <a className="navbar-brand home-btn" href="/">
+                <Link className="navbar-brand home-btn" to="/">
                     TheEyeOfThrawn.com
-                </a>
+                </Link>
                 <button
                     className="navbar-toggler"
                     type="button"
@@ -24,19 +26,19 @@ function Header() {
                 >
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <a className="nav-link active" href="/">
+                            <Link className="nav-link active" to="/">
                                 Home
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link active" href="/Blog">
+                            <Link className="nav-link active" to="/Blog">
                                 Blog
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link active" href="/AboutMe">
+                            <Link className="nav-link active" to="/AboutMe">
                                 About Me
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item dropdown">
                             <a

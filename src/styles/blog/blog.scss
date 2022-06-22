@@ -1,28 +1,76 @@
 
+.overall-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.half-div-item {
+    text-align: center;
+    border: 2px solid green;
+
+    //padding: 1vw;
+}
+.left {
+    width: 25%;
+}
+.right {
+    width: 75%;
+}
+
 .blog-div {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 .blog-post {
-    border-radius: 40px;
+    border: 0;
+    width: 13.5rem;
+    height: 9.25rem;
+    border: 2px solid black;
+    border-radius: .5rem;
+    padding: .5rem;
+    margin: .5rem;
+    text-decoration: none;
+    background-color: RGB(38, 125, 255, 0.25);
     hr {
-        border-top: 2px solid white;
+        width: 100%;
+        border-top: 2px solid black;
         margin: 0;
-        background: white;
+        margin-top: 10px;
+        background: black;
     }
     h1, h2, p {
         text-align: center;
+        background: 0;
+        margin: 0;
     }
-    width: 300px;
-    border: 2px solid white;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    h1 {
+        font-size: 1rem;
+    }
+    h2 {
+        font-style: italic;
+        font-size: .75rem;
+        margin-top: 10px;
+    }
+    p {
+        font-size: .75rem;
+        margin-top: 10px;
+    }
+    transition: 0.25s;
+    &:hover {
+        border: 2px solid #267dff;
+        background-color: RGB(38, 125, 255, 0.4);
+    }
 }
 .alert {
     padding: 0 !important;
-    border: 2px solid red !important;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     text-align: center;
+    border-radius: 0 !important;
+    border-top: 2px solid black !important;
+    border-bottom: 2px solid black !important;
+    font-size: 1.25rem;
 }

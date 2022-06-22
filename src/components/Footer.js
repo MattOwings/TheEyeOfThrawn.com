@@ -1,7 +1,12 @@
+import "../styles/footer/footer.css";
+
 function Footer() {
     return (
-        <div>
-            <h1>Footer</h1>
+        <div className="footer">
+            <div className="alert alert-primary">
+                Copyright ^ 2022 MistahEye / Eyeball Productions | All Rights
+                Reserved.
+            </div>
         </div>
     );
 }

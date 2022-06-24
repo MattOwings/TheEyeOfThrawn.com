@@ -1,0 +1,29 @@
+
+.opening {
+    display: flex;
+    height: 92vh;
+    background: linear-gradient(135deg, rgb(100, 113, 255), rgb(60, 77, 255), rgb(20, 40, 255), rgb(20, 39, 255), rgb(60, 77, 255), rgb(100, 113, 255));
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 200px;
+    font-style: italic;
+    h1 {
+        background: 0;
+        font-size: 3rem;
+        color: white;
+    }
+}
+.quarter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    background: black;
+    padding-bottom: 200px;
+    h1 {
+        background: 0;
+        font-size: 3rem;
+        color: white;
+    }
+}
